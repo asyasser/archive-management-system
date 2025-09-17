@@ -49,8 +49,7 @@ const QRScanner = () => {
   };
 
   const onScanFailure = (error) => {
-    // Handle scan failure - this is called frequently, so we don't log every failure
-    // console.warn('QR scan failed:', error);
+
   };
 
   const startScanner = () => {
@@ -91,7 +90,7 @@ const QRScanner = () => {
     
     setIsDownloading(true);
     try {
-      // Replaced the hardcoded URL with the API_URL variable
+      
       const response = await axios.post(
         `${API_URL}/documents/${scannedDocument.id}/generate-receipt`,
         {},

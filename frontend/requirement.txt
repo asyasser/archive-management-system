@@ -1,0 +1,7 @@
+axios
+html5-qrcode
+lucide-react
+react
+react-dom
+react-router-dom
+tailwindcss
