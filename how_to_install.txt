@@ -1,0 +1,46 @@
+Follow this guide to run the application in your machine : 
+
+inside the backend and frontend folders you will find the requirements.txt file for each (Frontend & Backend) containing all the dependencies needed to get the project up running.
+
+backend : 
+	* FastAPI
+	* uvicorn
+	* sqlalchemy
+	* psycopg2-binary
+	* python-dotenv
+	* qrcode[pil]
+	* reportlab
+Frontend :
+	* axios
+	* html5-qrcode
+    * lucide-react
+	* react
+    * react-dom
+	* react-router-dom
+	* tailwindcss
+
+==========Installing the dependencies===============
+
+==> After cloning the github repository, head to the backend folder :
+
+	1- Create a virtual enviroment : python -m venv venv
+	2- Activate it : source venv/bin/activate
+	3- After that, install the requirements provided in the requirements.txt file (using the command pip install )
+or : pip install -r requirements.txt
+
+==> setup the database : install postgresql and start it, then open pgAdmin4 and create a database without tables (because when you run the code the backend will create the table implicitly). after that create your own .env file and create a variable called "DATABASE_URL" and assign your database URL to it. 
+	- example for the database url : DATABASE_URL=postgresql://user:password@localhost:5432/mydb
+change the user and password to your own names.
+
+
+==> Now go to the frontend folder in your terminal and run the command : "npm install" to install the frontend dependencies.
+
+=========Run the project================
+
+1. backend : 
+	- in the terminal head to backend/app : and run the command : "uvicorn main:app --reload" --> this will run the backend on port 8000
+2. Frontend : 
+	- in the terminal head to frontend/ and run the command : npm run dev
+and the frontend will be running on port 5173.
+
+END
